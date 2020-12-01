@@ -74,4 +74,6 @@ dependencies {
     // picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
 
+    // img borda
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
 }

@@ -4,31 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.LoginFrag">
+    android:background="@color/Blue"
+    tools:context="com.example.desafiowebservice.ui.LoginFrag">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="150dp"
-        android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/back_red"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/back_red">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/White"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:gravity="center"
             android:text="Welcome to Marvel HQ's"
-            android:textSize="25dp"/>
+            android:textColor="@color/White"
+            android:textSize="25dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,76 +38,80 @@
             android:orientation="vertical">
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="40dp"
-                android:layout_marginLeft="10dp"
-                android:textColor="@color/Red"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Email"/>
+                android:text="Email"
+                android:textColor="@color/Red" />
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:inputType="text"
-                android:layout_marginStart="10dp"
                 android:textColor="@color/Gray"
-                android:theme="@style/EditTextTheme"
-                android:layout_marginEnd="10dp"/>
+                android:theme="@style/EditTextTheme" />
+
             <TextView
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:textColor="@color/Red"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Password"/>
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Password"
+                android:textColor="@color/Red" />
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:layout_height="18dp"
                 android:layout_marginStart="10dp"
-                android:theme="@style/EditTextTheme"
+                android:layout_marginEnd="10dp"
+                android:inputType="textPassword"
                 android:textColor="@color/Gray"
-                android:layout_marginEnd="10dp"/>
+                android:theme="@style/EditTextTheme" />
 
             <CheckBox
-                android:layout_width="wrap_content"
+                android:layout_width="38dp"
                 android:layout_height="wrap_content"
-                android:text="Remember"
                 android:layout_marginLeft="10dp"
-                android:textColor="@color/Black"
-                app:buttonTint="@color/Red" />
+                android:checked="true"
+                android:text="Remember"
+                android:textColor="@color/Black" />
 
             <Button
-                android:id="@+id/button_logintohqs"
+                android:id="@+id/btnLoginHq"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
-                android:textColor="@color/white"
-                android:textSize="20sp"
+                android:background="@color/Red"
+                android:gravity="center"
                 android:paddingTop="15dp"
                 android:paddingBottom="15dp"
-                android:backgroundTint="@color/Red_light"
-                android:text="LOG IN" />
+                android:text="LOG IN"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button_logintocadastro"
+                android:id="@+id/btnLoginCad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:backgroundTint="@color/white"
-                android:text="Create Accont"
-                android:background="@color/Gray_light"
-                android:textAllCaps="false"
-                android:textSize="15sp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/White"
+                android:gravity="center"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:layout_marginBottom="5dp"
-                android:textColor="@color/Gray_light" />
+                android:text="Create Accont"
+                android:textAllCaps="false"
+                android:textColor="@color/Gray"
+                android:textSize="15sp" />
+
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
